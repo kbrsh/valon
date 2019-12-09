@@ -1,8 +1,8 @@
-tu /tʌ/ = I
-ro /ɹɑ/ = you
-ka /ka/ = it/they (singular)
-ya /ja/ = we
-chu /ʧɯ/ = you all
-ki /ki/ = they (plural)
-su /sʌ/ = this
-yu /jɯ/ = that
+che /ʧɛ/ = I
+nu /nɯ/ = you
+tu /tʌ/ = it/they (singular)
+ro /ɹɑ/ = we
+ka /ka/ = you all
+ya /ja/ = they (plural)
+chu /ʧɯ/ = this
+ki /ki/ = that

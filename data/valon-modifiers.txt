@@ -1,5 +1,3 @@
 ip /ip/ = definite (the)
 ev /ɛv/ = indefinite (a)
 ap /ap/ = plural
-ar /æɹ/ = past
-ach /æʧ/ = present
