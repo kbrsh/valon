@@ -1,34 +1,37 @@
-for
 and
-nor
+that
 but
 or
-yet
-so
-after
-although
 as
-because
-before
-even if
-even though
 if
-in order that
-once
-provided that
-rather than
-since
-so that
-than
-that
-though
-unless
-until
 when
-whenever
-where
-whereas
-wherever
-whether
+than
+because
 while
-why
+where
+so
+though
+after
+since
+until
+whether
+before
+although
+even
+nor
+like
+once
+unless
+long
+now
+except
+far
+for
+rather
+soon
+whereas
+not
+in
+provided
+case
+till

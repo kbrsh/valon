@@ -43,8 +43,8 @@ const nounsDefinitions = fs.readFileSync("data/english-nouns.txt").toString().sp
 const verbsDefinitions = fs.readFileSync("data/english-verbs.txt").toString().split("\n").slice(0, -1);
 const adjectivesDefinitions = fs.readFileSync("data/english-adjectives.txt").toString().split("\n").slice(0, -1);
 const prepositionsDefinitions = fs.readFileSync("data/english-prepositions.txt").toString().split("\n").slice(0, -1);
-const frequency = fs.readFileSync("data/english-frequency.txt").toString().split("\n").slice(0, -1);
 const map = {};
+const mapWord = [0, 0, 0, 0, 0, 0, 0];
 let seed = 7;
 
 function random() {
@@ -90,22 +90,22 @@ function randomConsonantTwo() {
 }
 
 function randomConsonantWord(definition) {
+	let length = Math.ceil(definition.length / 7);
 	let result;
 
-	do {
-		let length = frequency.indexOf(definition);
-		result = randomConsonant();
+	while (mapWord[length] === consonants.length * Math.pow(vowels.length * consonants.length, length)) {
+		length += 1;
+	}
 
-		if (length === -1) {
-			length = definition.length / 3;
-		} else {
-			length = 2 * length / frequency.length + 1;
-		}
+	do {
+		result = randomConsonant();
 
 		for (let i = 0; i < length; i++) {
 			result += randomVowel() + randomConsonant();
 		}
 	} while (result in map);
+
+	mapWord[length] += 1;
 
 	return map[result] = result;
 }
